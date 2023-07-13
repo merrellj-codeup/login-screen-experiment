@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Screen Experiment</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">   
+    <link rel="stylesheet" href="css/resets.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="page-wrapper justify-center login">
+        <div class="container login">
+            <div class="row grow no-padding justify-space-between">
+                <div class="login-complete"></div>
+                <form class="login-left" method="GET" id="signUp">
+                    <div class="d-flex flex-column gap-5">
+                        <p class="subtitle">Register Now</p>
+                        <h2>Sign Up For Free.</h2>
+                        <p class="sub">Already have an account? <span class="login-toggle">Sign In.</span></p>
+                    </div>
+                    <label class="input-wrapper">
+                        <span>Username</span>
+                        <input type="text" name="username">
+                    </label>
+                    <label class="input-wrapper">
+                        <span>Email</span>
+                        <input type="email" name="email">
+                    </label>
+                    <label class="input-wrapper">
+                        <span>Password</span>
+                        <input type="password" name="password">
+                    </label>
+                    <button class="btn btn-submit">
+                        <span>Sign Up</span>
+                    </button>
+                    <p class="disclaimer">
+                        By signing up, you agree to our <a href="#">Terms of Use</a> and <a href="#">Privacy Policy</a>.
+                    </p>
+                </form>
+                <form class="login-right" method="GET" id="signIn">
+                    <div class="d-flex flex-column gap-5">
+                        <p class="subtitle">Continue your journey</p>
+                        <h2>Welcome Back!</h2>
+                        <p class="sub">Don't have an account? <span class="login-toggle">Sign Up.</span></p>
+                    </div>
+                    <label class="input-wrapper">
+                        <span>Username</span>
+                        <input type="text" name="username">
+                    </label>
+                    <label class="input-wrapper">
+                        <span>Password</span>
+                        <input type="password" name="password">
+                    </label>
+                    <button class="btn btn-submit">
+                        <span>Sign In</span>
+                    </button>
+                    <p class="disclaimer">
+                        By signing in, you agree to our <a href="#">Terms of Use</a> and <a href="#">Privacy Policy</a>.
+                    </p>
+                </form>
+                <div class="login-image-mask">
+                    <div class="login-logo-container">
+                        <img src="img/example-logo.svg" alt="Logo">
+                    </div>
+                    <div class="login-image-container">
+                        <img src="img/THG_M405_04.svg" alt="Login Image" class="login-image">
+                        <img src="img/THG_M405_03.svg" alt="Login Image" class="login-image">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button id="test-toggle">Test Toggle</button>
+    </div>
+    <script type="module" src="js/main.js"></script>
+</body>
+</html>
